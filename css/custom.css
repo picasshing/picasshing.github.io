@@ -226,3 +226,97 @@ img {
     }
     
 }
+
+/* 十二生肖 */
+@font-face {
+font-family: 'iconfont';
+src: url('/fonts/iconfont.eot');
+src: url('/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+url('/fonts/iconfont.woff2') format('woff2'),
+url('/fonts/iconfont.woff') format('woff'),
+url('/fonts/iconfont.ttf') format('truetype'),
+url('/fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	/* font-family 可以自定义，但是必须和上面@font-face中的font-family保持一致 */
+	font-size: 3em;
+	/* 可以定义图标大小 */
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rat:before {
+	content: "\e60e";
+	color: #85c3de;
+	/* 可以使用color属性来定义图标颜色 */
+	/* 若已经在项目设置中勾选了彩色选项，则无需再定义图标颜色*/
+}
+
+.icon-ox:before {
+	content: "\e60c";
+	color: #ffaf6e;
+}
+
+.icon-tiger:before {
+	content: "\e611";
+	color: #f7c768;
+}
+
+.icon-rabbit:before {
+	content: "\e60d";
+	color: #ffbdd8;
+}
+
+.icon-dragon:before {
+	content: "\e609";
+	color: #ff8787;
+}
+
+.icon-snake:before {
+	content: "\e610";
+	color: #c3d686;
+}
+
+.icon-horse:before {
+	content: "\e60a";
+	color: #ffaf6e;
+}
+
+.icon-goat:before {
+	content: "\e608";
+	color: #f7c768;
+}
+
+.icon-monkey:before {
+	content: "\e60b";
+	color: #c3d686;
+}
+
+.icon-rooster:before {
+	content: "\e60f";
+	color: #ff8787;
+}
+
+.icon-dog:before {
+	content: "\e607";
+	color: #85c3de;
+}
+
+.icon-boar:before {
+	content: "\e612";
+	color: #ffbdd8;
+}
+
+/* 吸盘aplayer */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
